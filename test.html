@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Conversion</title>
+</head>
+
+<script>
+    function convert_F_To_C(){
+        var far = prompt("Enter the temperature in Fahrenhit:");
+        var cel = (far - 32)* 5/9;
+        document.getElementById("text").innerHTML =" The Temperature in celcius is " + cel;
+    }
+
+
+    function convert_C_To_F(){
+        var cel = prompt("Enter the temperature in Celcius:");
+        var far = cel* (9/5)+32;
+        document.getElementById("text").innerHTML =" The Temperature in farenhit is " + far;
+    }
+</script>
+<body>
+
+   <input type="button" onclick="convert_F_To_C()" value="Convert F to C"> 
+
+   <br>
+   <br>
+
+   <input type="button" onclick="convert_C_To_F()" value="Convert C to F"> 
+
+   <h1 id ="text"> </h1>
+
+
+</body>
+</html>

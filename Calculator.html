@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Calculator By Bansal</title>
+</head>
+
+<script>
+    function find(){
+        var val1 = parseInt(document.getElementById("val1").value);
+        var val2 = parseInt(document.getElementById("val2").value);
+        
+        var option = document.getElementById("option").value;
+        switch(option) {
+        case "add":
+        document.getElementById("out").innerHTML ="Addtion: "+ (val1+val2) ;
+        break;
+        case "sub":
+        document.getElementById("out").innerHTML ="Substraction: "+ (val1-val2) ;
+        break;
+        case "mul":
+        document.getElementById("out").innerHTML ="Multiplication: "+ (val1*val2) ;
+        break;
+        case "div":
+        document.getElementById("out").innerHTML ="Division: "+ (val1/val2) ;
+        break;
+        }
+    }
+</script>
+<style>
+.all{
+    margin-top: 10px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 20px;
+    font-size: 40px;
+}
+input,select{
+    width: 250px;
+    height: 35px;
+    font-size: 30px;
+}
+</style>
+<body>
+    <div style="margin-top: 200px;">
+    <div class="all">
+        <label for="val1" >First Number:</label>
+        <input type="number" name="val1" id="val1" size="xx-large"><br>
+    </div> 
+    <div class="all">
+        <label for="val2" >Second Number:</label>
+        <input type="number" name="val2" id="val2" class="" ><br>
+    </div> 
+    <div class="all">
+    <label for="option" >Select operation:   </label>
+        <select name="option" onclick="find()" id="option" class="">
+            <option value="add">Addition</option>
+            <option value="sub">Substraction</option>
+            <option value="mul">Multiplication</option>
+            <option value="div">Division</option>
+        </select><br> 
+    </div>    
+    <div class="all">
+        <h4 id="out"></h4>  
+    </div>
+</div>
+</body>
+</html>
