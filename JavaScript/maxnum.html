@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<script>
+function maxi(){
+    var val1=parseFloat(prompt("Enter first number: "));
+    var val2=parseFloat(prompt("Enter second number: "));
+    var val3=parseFloat(prompt("Enter third number: "));
+
+    var max= Math.max(val1,val2,val3);
+    document.getElementById("text").innerHTML="Maximum of "+val1+" , "+val2+" , "+val3+ " is   "+max;
+
+}
+
+</script>
+
+<body onload="maxi()">
+    <!-- <input type="button" value="Enter Values" onclick="maxi()"> -->
+    <h2 id="text">""</h2>
+</body>
+</html>

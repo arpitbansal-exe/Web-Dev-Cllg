@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Calculator By Bansal</title>
+</head>
+
+<script>
+
+    function add(){ 
+        var val1 = parseFloat(document.getElementById("val1").value);
+        var val2 = parseFloat(document.getElementById("val2").value);
+        document.getElementById("out").innerHTML ="Addtion: "+ (val1+val2);
+    }
+    function sub(){ 
+        var val1 = parseFloat(document.getElementById("val1").value);
+        var val2 = parseFloat(document.getElementById("val2").value);
+        document.getElementById("out").innerHTML ="Substraction: "+ (val1-val2);
+    }
+    function mult(){ 
+        var val1 = parseFloat(document.getElementById("val1").value);
+        var val2 = parseFloat(document.getElementById("val2").value);
+        document.getElementById("out").innerHTML ="Multiplication: "+ (val1*val2);
+    }
+    function division(){ 
+        var val1 = parseFloat(document.getElementById("val1").value);
+        var val2 = parseFloat(document.getElementById("val2").value);
+        if(val2==0){
+                alert("Division by Zero not possible")
+                document.getElementById("out").innerHTML ="Cannot divide by zero";
+
+            }
+        else
+        document.getElementById("out").innerHTML ="Division: "+ (val1/val2);
+    }
+</script>
+<style>
+input{
+    font-size:30px;
+}
+</style>
+
+<body>
+    <form  style="text-align: center; font-size: xx-large;">
+        <br><br><br>
+        <label for="val1" >First Number:</label>
+        <input type="number" name="val1" id="val1" size="xx-large"><br>
+        <br>
+        <label for="val2" >Second Number:</label>
+        <input type="number" name="val2" id="val2" class="" ><br>
+        <br>
+        <input type="button" value="Add" onclick="add()">
+        <input type="button" value="Substraction" onclick="sub()">
+        <input type="button" value="Multiplication" onclick="mult()">
+        <input type="button" value="Division" onclick="division()">
+        <br> <br>
+        <h4 id="out"></h4>  
+</form>
+
+</div>
+</body>
+</html>

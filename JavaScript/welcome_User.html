@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<script>
+    function welcome(){
+        var name= prompt("Enter your Name: ")
+        document.getElementById("name").innerHTML="Welcome "+name;
+
+    }
+</script>
+
+<body onload="welcome()">
+    <h1 id="name"></h1>
+</body>
+</html>
