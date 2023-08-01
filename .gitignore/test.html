@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Company Registration Form</title>
+</head>
+<body>
+        <h1 style="text-align: center;">Company Registration Form </h1>
+        <form action="#" method="post" style="text-align: center; font-size: 25px;">
+            <label for="companyName">Company Name:</label>
+            <input type="text" id="companyName" name="companyName" required>
+            <br>
+            <label for="contactPerson">Contact Person:</label>
+            <input type="text" id="contactPerson" name="contactPerson" required>
+            <br>
+            <label for="email">Email:</label>
+            <input type="email" id="email" name="email" required>
+            <br>
+            <label for="phoneNumber">Phone Number:</label>
+            <input type="tel" id="phoneNumber" name="phoneNumber" required>
+            <br>
+            <label for="address">Address:</label>
+            <textarea id="address" name="address" rows="3" required></textarea>
+            <br>
+            <label for="registrationType">Registration Type:</label>
+            <br>
+            <select id="registrationType" name="registrationType" required>
+                <option value="private">Private Limited</option>
+                <option value="public">Public Limited</option>
+                <option value="partnership">Partnership</option>
+                <option value="soleProprietorship">Sole Proprietorship</option>
+            </select>
+            <br>
+            <button type="submit">Register</button>
+        </form>
+</body>
+</html>
