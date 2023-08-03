@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body >
+    <br><br>
+    <form action="" style="text-align: center; font-size: 30px;">
+    <label for="name">Enter a color</label>
+    <input type="text" name="name" id="nc">
+    <input type="button" value="Add color" onclick="addColor()">
+    <br>
+    <h3>List of Colors: </h3>
+    <h3 id="list"></h3>
+    </form>
+</body>
+
+<script>
+    var color=['red','green','blue'];
+    document.getElementById("list").innerHTML=color;
+    function addColor(){
+        var nc=document.getElementById("nc").value;
+        if(!color.includes(nc)){
+            color.push(nc);
+            alert("New color added");
+            document.getElementById("list").innerHTML=color;
+        }
+        else
+            alert("Color already in list");
+    }
+
+</script>
+</html>

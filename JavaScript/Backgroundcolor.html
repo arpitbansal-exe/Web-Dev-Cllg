@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Change Background Color</title>
+</head>
+
+<script>
+    var i=0;
+    var color=["red","blue","green","yellow","pink","orange","purple","white"];
+    function cb() {
+        if(i==color.length){
+            i=0;
+        }
+        else
+        document.body.style.backgroundColor=color[i];
+        i++;
+    }
+</script>
+
+<body>
+    <h1>Click button to change color</h1>
+    <button type="button" onclick="cb()" style="font-size: 30px;">Change Background</button>
+</body>
+</html>

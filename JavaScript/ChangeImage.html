@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<script>
+    var i=0;
+    var images = ['../Images/img1.png','../Images/img2.png','../Images/img3.png']; 
+
+    function changeImage(){
+        if(i==images.length){
+            i=0;
+        }
+        else
+        document.getElementById('myImg').src=images[i];
+        i++; 
+    }
+</script>
+
+<body>
+    <button type="button" onclick="changeImage()">Change Image</button>
+    <br>
+    <br>
+    <img src="" alt="" id="myImg" style="width: 400px;height: 300px;">
+</body>
+</html>

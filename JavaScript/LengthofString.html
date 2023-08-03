@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<script>    
+    function count(){
+
+        var st = document.getElementById("str").value;
+        document.getElementById("l").innerHTML="Length of String: "+st.length;
+    }
+</script>
+
+<body>
+    <form action="" style="text-align: center; font-size: 35px;">
+        <br><br><br>
+        <label for="string">Enter a string</label>
+        <input type="text" name="sting" id="str">
+        <br><br>
+        <input type="button" value="Calculate length" onclick="count()">
+        <br>
+        <h3 id="l"></h3>
+    </form>
+
+    
+</body>
+</html>
