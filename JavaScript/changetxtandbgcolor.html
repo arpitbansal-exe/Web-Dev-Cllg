@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<script>
+    function fun(){
+        var txt=document.getElementById("txt");
+        var t_color = document.getElementById("txtcolor").value;
+        var bg_color = document.getElementById("bgcolor").value;
+
+        if(t_color==bg_color){
+           txt.style.color="black"; 
+           txt.style.backgroundColor="white"; 
+        }
+        else{
+            txt.style.color=t_color; 
+            txt.style.backgroundColor=bg_color;   
+        }
+
+
+    }
+</script>
+<style>
+    select,input{
+        font-size: 40px;
+    }
+</style>
+
+<body>
+    <div style="text-align: center; font-size: 60px">
+        <h1 id="txt">This is a Heading</h1>
+        <select name="txtcolor" id="txtcolor">
+            <option value="red">Test Color</option>
+            <option value="red">Red</option>
+            <option value="blue">Blue</option>
+            <option value="green">Green</option>
+        </select>
+        
+        <select name="bgcolor" id="bgcolor">
+            <option value="red">Background Color</option>
+            <option value="red">Red</option>
+            <option value="blue">Blue</option>
+            <option value="green">Green</option>
+        </select>
+         <input type="button" value="Click Me" onclick="fun()">
+    
+    </div>
+    
+    
+        
+</body>
+</html>

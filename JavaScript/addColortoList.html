@@ -19,10 +19,13 @@
 </body>
 
 <script>
-    var color=['red','green','blue'];
+    // var color=['red','green','blue'];
+    var color=prompt("Enter initial list").split(",");
     document.getElementById("list").innerHTML=color;
+
     function addColor(){
         var nc=document.getElementById("nc").value;
+        nc=nc.toLowerCase();
         if(!color.includes(nc)){
             color.push(nc);
             alert("New color added");
@@ -30,6 +33,7 @@
         }
         else
             alert("Color already in list");
+        document.getElementById("nc").value="";
     }
 
 </script>
