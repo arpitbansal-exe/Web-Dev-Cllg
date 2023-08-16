@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Arpit Bansal</title>
+</head>
+
+<style>
+    a,button{
+        font-size: 40px;
+    }
+</style>
+
+<script>
+
+    function AddAnchor(){
+        console.log("Hello");
+        var container=document.getElementById("container");
+
+        var anchor=document.createElement("a");
+        anchor.href="http://arpitbansal.me";
+        anchor.textContent="Arpit Bansal"
+        anchor.target="_blank";
+        container.appendChild(anchor);
+    }
+    
+
+</script>
+
+<body>
+    <br><br>
+    <div id="container"></div>
+    <br><br>
+    <button id="AddAnchorBtn" onclick="AddAnchor()">Create Anchor</button>
+</body>
+</html>

@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Arpit Bansal</title>
+</head>
+
+<style>
+    table{
+        font-size: 40px;
+        border-collapse: collapse;
+    }
+    th,td{
+        border: 1px solid black;
+        padding: 8px;
+    }
+    button{
+        font-size: 35px;
+    }
+</style>
+<body>
+    <h1>Assignment 5: Add Elements to list</h1>
+    <br><br>
+    <table id="myTable">
+        <thead>
+            <tr>
+                <th>Name</th>
+                <th>Email</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <td>Arpit Bansal</td>
+                <td>arpit@gmail.com</td>
+            </tr>
+        </tbody>
+    </table>
+    <br><br>
+    <button id="addRow" onclick="addRow()">Add Row</button>
+</body>
+
+<script>
+    function addRow(){
+        var table=document.getElementById("myTable");
+        var row=table.insertRow(table.rows.length);
+
+        var name=prompt("Enter the Name: ")
+        var email=prompt("Enter the Email: ")
+
+        row.insertCell(0).innerHTML=name;
+        row.insertCell(1).innerHTML=email;
+    }
+</script>
+
+
+</html>
